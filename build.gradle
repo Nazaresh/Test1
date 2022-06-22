@@ -1,0 +1,25 @@
+plugins
+        {
+            id 'java'
+            id "idea"
+        }
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories
+        {
+            mavenCentral()
+        }
+
+dependencies
+        {
+            implementation group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '3.0.4'
+            implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-multipart', version: '3.0.4'
+            implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '3.0.4'
+            implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '3.0.4'
+
+            implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+
+            implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
+        }
